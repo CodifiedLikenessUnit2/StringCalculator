@@ -9,5 +9,13 @@ public class CalcTests {
         String emptyString = "";
         int result = emptyString.Add(emptyString);
         assertEquals("", result);
+	
+	//tests one number
+	//single digit
+	result = emptyString.Add("3");
+        assertEquals(3, result);
+	//double digit
+	result = emptyString.Add("31");
+        assertEquals(31, result);
     }
 }
