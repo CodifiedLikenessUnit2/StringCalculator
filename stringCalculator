@@ -1,0 +1,13 @@
+public interface ListFunctions{
+  //can take 0,1, or 2 numbers
+  //returns sum
+  private static int Add(string numbers){
+    int runningTotal = 0;
+    if(numbers == ""){
+      return runningTotal;
+     }
+    Scanner s = new Scanner(numbers).useDelimiter(",");
+    runningTotal += s.nextInt();
+    return runningTotal;
+   }
+}
