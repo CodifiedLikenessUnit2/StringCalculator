@@ -1,0 +1,13 @@
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class CalcTests {
+
+    @Test
+    public void testAdd() {
+		//tests an empty string
+        String emptyString = "";
+        int result = emptyString.Add(emptyString);
+        assertEquals("", result);
+    }
+}
