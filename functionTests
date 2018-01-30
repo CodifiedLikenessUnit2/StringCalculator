@@ -1,7 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class CalcTests {
+public class CalcTests extends StringCalculator{
 
     @Test
     public void testAdd() {
@@ -20,5 +20,8 @@ public class CalcTests {
 	//tests two numbers
 	result = emptyString.Add("3,3");
         assertEquals(6, result);
+	//double digits
+	result = emptyString.Add("13,31");
+        assertEquals(44, result);
     }
 }
