@@ -23,5 +23,9 @@ public class CalcTests extends StringCalculator{
 	//double digits
 	result = emptyString.Add("13,31");
         assertEquals(44, result);
+	
+	//test three numbers
+	result = emptyString.Add("1,2,3");
+        assertEquals(6, result);
     }
 }
