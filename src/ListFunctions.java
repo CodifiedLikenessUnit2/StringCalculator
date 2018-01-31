@@ -1,7 +1,9 @@
-public interface ListFunctions{
+import java.util.Scanner;
+
+public class ListFunctions{
   //can take 0,1, or 2 numbers
   //returns sum
-  private static int Add(string numbers){
+  public static int add(String numbers){
     int runningTotal = 0;
     if(numbers == ""){
       return runningTotal;
