@@ -9,7 +9,6 @@ public class ListFunctions{
       return runningTotal;
      }
     Scanner s = new Scanner(numbers).useDelimiter(",");
-    runningTotal += s.nextInt();
     while(s.hasNext()){
       runningTotal += s.nextInt();
     }
