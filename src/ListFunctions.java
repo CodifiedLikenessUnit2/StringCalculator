@@ -5,7 +5,7 @@ public class ListFunctions{
   //returns sum
   public static int add(String numbers){
     int runningTotal = 0;
-    if(numbers == ""){
+    if(numbers.equals("")){
       return runningTotal;
      }
     Scanner s = new Scanner(numbers).useDelimiter(",");
